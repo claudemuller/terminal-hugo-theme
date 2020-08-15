@@ -1,0 +1,26 @@
+{
+  "name": "terminal-website-theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claudemuller/terminal-website-theme.git"
+  },
+  "author": "Claude Müller",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/claudemuller/terminal-website-theme/issues"
+  },
+  "homepage": "https://github.com/claudemuller/terminal-website-theme#readme",
+  "dependencies": {
+    "css-vars-ponyfill": "^2.3.2",
+    "jquery": "^3.1.1",
+    "jquery.terminal": "^2.17.6",
+    "js-polyfills": "^0.1.42",
+    "treeify": "^1.1.0"
+  }
+}

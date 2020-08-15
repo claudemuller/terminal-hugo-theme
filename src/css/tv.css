@@ -1,0 +1,46 @@
+.tv {
+	height: 100vh;
+	position: relative;
+}
+
+.tv.collapse {
+	animation: size 2s ease-out;
+	animation-fill-mode: forwards;
+}
+
+.tv.collapse:before {
+	content: '';
+	display: block;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	background: white;
+	z-index: 1;
+	opacity: 0;
+	animation: opacity 2s ease-out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes opacity {
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes size {
+	50% {
+		transform: scaleX(calc(1 / var(--width)));
+		opacity: 1;
+	}
+	98% {
+		transform: scaleX(calc(1 / var(--width))) scaleY(calc(1 / var(--height)));
+		opacity: 1;
+	}
+	100% {
+		transform: scaleX(calc(1 / var(--width))) scaleY(calc(1 / var(--height)));
+		opacity: 0;
+	}
+}

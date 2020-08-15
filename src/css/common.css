@@ -1,0 +1,22 @@
+body {
+	margin: 0;
+	background: black;
+}
+
+#term {
+	height: 100vh;
+}
+
+:root {
+	--background: #031e11;
+	--size: 1.5;
+}
+
+.self {
+	transform: scale(-1, 1);
+}
+
+.terminal {
+	color: #9F9;
+	text-shadow: 0 0.2rem 1rem #0f0;
+}

@@ -1,0 +1,150 @@
+@keyframes blink {
+	50% {
+		opacity: 0;
+	}
+}
+/**
+  * Base styles
+  */
+body {
+	background: #000;
+	color: transparent;
+	font: 1.5vw "Share Tech Mono", monospace;
+	text-shadow: 0 0 1px #86fffa;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	transition: font-size 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 400;
+}
+
+p {
+	line-height: 1.5em;
+}
+
+.values {
+	border: 1px solid transparent;
+	box-shadow: 0 0 3px 2px #86fffa;
+	opacity: 0.95;
+	margin: 7px 0;
+	padding: 0;
+	line-height: 1em;
+	width: auto;
+}
+
+/* /base */
+/**
+  * Containers
+  */
+.container {
+	border: 2px solid #2e81cf;
+	box-shadow: 0 0 3px 2px #2e81cf;
+	opacity: 0.95;
+	width: 90vw;
+	height: 90vh;
+	margin: 0 auto;
+	margin-top: 2em;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+@media (max-width: 920px) {
+	.container {
+		width: 95vw;
+	}
+}
+
+.left-side {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	width: 80%;
+	max-width: 80%;
+}
+
+.right-side {
+	display: flex;
+	width: 19%;
+	max-width: 19%;
+	height: 100%;
+}
+
+/* /containers */
+.deorbital {
+	border: 2px solid #2e81cf;
+	box-shadow: 0 0 3px 2px #2e81cf;
+	opacity: 0.95;
+	width: 100%;
+	max-width: 100%;
+	height: 100px;
+	margin: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.deorbital h1 {
+	padding-left: 40px;
+	color: transparent;
+	font-size: 1.6em;
+}
+.deorbital .details {
+	max-width: 50%;
+	display: flex;
+	padding-right: 40px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.map {
+	border: 2px solid #2e81cf;
+	box-shadow: 0 0 3px 2px #2e81cf;
+	opacity: 0.95;
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	margin: 0 0 10px 10px;
+}
+.map .inner {
+	width: 95%;
+	max-width: 95%;
+	margin: 0 1em;
+}
+
+.stats {
+	border: 2px solid #2e81cf;
+	box-shadow: 0 0 3px 2px #2e81cf;
+	opacity: 0.95;
+	width: 100%;
+	max-height: 100%;
+	margin: 10px;
+	padding: 5px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	text-align: left;
+}
+
+/**
+  * Blinking cursor
+  */
+.cursor {
+	border: 2px solid #2e81cf;
+	box-shadow: 0 0 3px 2px #2e81cf;
+	opacity: 0.95;
+	display: inline-block;
+	height: 1.4em;
+	width: 12px;
+	background: #86fffa;
+	opacity: 0.9;
+	animation: blink 2s infinite;
+}
+
+/* /cursor */
